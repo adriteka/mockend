@@ -1,2 +1,2 @@
 # mockend
-Repo for granting permission to Mockend
+Repo with permission granted to Mockend
