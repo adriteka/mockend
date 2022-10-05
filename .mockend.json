@@ -1,5 +1,35 @@
 {
   "User": {
-    "title": { "string": {} }
+    "name": { "string": [
+    "Alberto",
+    "Adrià",
+    "Laura",
+    "Miguel Ángel",
+    "Cristina",
+    "Ana",
+    "Nuria",
+    "Enric",
+    "Jordi",
+    "José",
+    "Josep",
+    "Chloe",
+    "Montse",
+    "María",
+    "Carlos",
+    "Alberto",
+    "Eloy"]
+            },
+    "surname": { "string": [
+      "Ramírez",
+      "Salas",
+      "López",
+      "García",
+      "Caballero",
+      "Ventura",
+      "Hernández",
+      "Plaza",
+      "Garrido"
+      ]
+               }
   }
 }
