@@ -1,35 +1,123 @@
 {
   "User": {
-    "name": { "string": [
-    "Alberto",
-    "Adrià",
-    "Laura",
-    "Miguel Ángel",
-    "Cristina",
-    "Ana",
-    "Nuria",
-    "Enric",
-    "Jordi",
-    "José",
-    "Josep",
-    "Chloe",
-    "Montse",
-    "María",
-    "Carlos",
-    "Alberto",
-    "Eloy"]
-            },
-    "surname": { "string": [
-      "Ramírez",
-      "Salas",
-      "López",
-      "García",
-      "Caballero",
-      "Ventura",
-      "Hernández",
-      "Plaza",
-      "Garrido"
+    "name": {
+      "string": [
+        "Alberto",
+        "Adrià",
+        "Laura",
+        "Miguel Ángel",
+        "Cristina",
+        "David",
+        "Ana",
+        "Nuria",
+        "Alba",
+        "Enric",
+        "Jordi",
+        "José",
+        "Josep",
+        "Chloe",
+        "Esteve",
+        "Montse",
+        "María",
+        "Carlos",
+        "Alberto",
+        "Eloy",
+        "Tomás"
       ]
-               }
+    },
+    "surname": {
+      "string": [
+        "Ramírez",
+        "Salas",
+        "López",
+        "García",
+        "Caballero",
+        "Ventura",
+        "Hernández",
+        "Plaza",
+        "Garrido",
+        "Jobs",
+        "Schwarzenegger",
+        "Molina"
+      ]
+    },
+    "projects": {
+      "hasMany": "Project"
+    }
+  },
+  "Project": {
+    "title": {
+      "string": [
+        "Simplify",
+        "Vectorify",
+        "Facebook clone",
+        "Dashcoin",
+        "Orbit",
+        "Just-Drink",
+        "Full-time Front-end Bootcamp",
+        "Part-time Back-end Bootcamp",
+        "Diamondhack",
+        "Hackathon 2.0"
+      ]
+    },
+    "type": {
+      "string": [
+        "User Interface Design",
+        "User Experience Design",
+        "Application Development",
+        "Responsive Web Design",
+        "Cybersecurity & Data Encryption",
+        "User Research",
+        "API Testing & Deployment",
+        "Rapid Prototyping",
+        "Usability Testing",
+        "Marketing & SEO",
+        "HTML, CSS and JavaScript"
+      ]
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2015-01-01T00:00:00Z",
+        "max": "2021-12-31T23:59:59Z"
+      }
+    },
+    "isFinished": {
+      "boolean": {}
+    },
+    "summary": {
+      "loremSentences": { "minLength": 15, "maxLength": 25 }
+    },
+    "body": {
+      "loremSentences": { "minLength": 80, "maxLength": 130 }
+    },
+    "conclusions": {
+      "loremSentences": { "minLength": 40, "maxLength": 75 }
+    },
+    "user": {
+      "belongsTo": "User"
+    },
+    "service": {
+      "belongsTo": "Service"
+    }
+  },
+  "Service": {
+    "title": {
+      "string": [
+        "User Interface Design",
+        "User Experience Design",
+        "Application Development",
+        "Responsive Web Design",
+        "Cybersecurity & Data Encryption",
+        "User Research",
+        "API Testing & Deployment",
+        "Rapid Prototyping",
+        "Usability Testing",
+        "Marketing & SEO",
+        "HTML, CSS and JavaScript"
+      ]
+    },
+    "summary": {
+      "loremSentences": { "minLength": 15, "maxLength": 25 }
+    }
   }
 }
